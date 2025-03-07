@@ -1,0 +1,78 @@
+{
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"frame": "block/copper_grate/frame",
+		"grid": "block/copper_grate/grid",
+		"particle": "block/copper_grate/particle"
+	},
+	"elements": [
+		{   
+			"name": "frame",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down":  { "texture": "#frame", "cullface": "down" },
+				"up":    { "texture": "#frame", "cullface": "up" },
+				"north": { "texture": "#frame", "cullface": "north" },
+				"south": { "texture": "#frame", "cullface": "south" },
+				"west":  { "texture": "#frame", "cullface": "west" },
+				"east":  { "texture": "#frame", "cullface": "east" }
+			}
+		},
+		{
+			"name": "grid_x",
+			"from": [0.1, -3.78, -3.78],
+			"to": [15.9, 19.78, 19.78],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 12.5, 12.5], "texture": "#grid", "cullface": "east"}
+			}
+		},
+		{
+			"name": "grid_x-",
+			"from": [0.1, -3.78, -3.78],
+			"to": [15.9, 19.78, 19.78],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"west": {"uv": [0, 0, 12.5, 12.5], "texture": "#grid", "cullface": "west"}
+			}
+		},
+		{
+			"name": "grid_y",
+			"from": [-3.78, 0.1, -3.78],
+			"to": [19.78, 15.9, 19.78],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"up"  : {"uv": [0, 0, 12.5, 12.5], "texture": "#grid", "cullface": "up"}
+			}
+		},
+		{
+			"name": "grid_y-",
+			"from": [-3.78, 0.1, -3.78],
+			"to": [19.78, 15.9, 19.78],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"down": {"uv": [0, 0, 12.5, 12.5], "texture": "#grid", "cullface": "down"}
+			}
+		},
+		{
+			"name": "grid_z",
+			"from": [-3.78, -3.78, 0.1],
+			"to": [19.78, 19.78, 15.9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"south": {"uv": [0, 0, 12.5, 12.5], "texture": "#grid", "cullface": "south"}
+			}
+		},
+		{
+			"name": "grid_z-",
+			"from": [-3.78, -3.78, 0.1],
+			"to": [19.78, 19.78, 15.9],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 12.5, 12.5], "texture": "#grid", "cullface": "north"}
+			}
+		}
+	]
+}

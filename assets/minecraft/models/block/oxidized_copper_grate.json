@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/copper_grate",
+  "textures": {
+    "particle": "block/copper_grate/particle_oxidized",
+		"frame": "block/copper_grate/frame_oxidized",
+    "grid": "block/copper_grate/grid_oxidized"
+  }
+}
